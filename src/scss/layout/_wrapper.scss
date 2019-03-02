@@ -1,0 +1,18 @@
+.wrapper {
+  width: 100%;
+  max-width: 192rem;
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+
+  @media (max-width: $tab-port) {
+    width: 100%;
+  }
+  @media (max-width: $phone) {
+    width: 100%;
+  }
+}
+
+.wrapper.wrapper-index { // wrapper-index это значит стиль используется только на странице index.html
+  text-align: center;
+}

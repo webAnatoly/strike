@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./roboto/Roboto-Regular.eot');
+  src: local('PT Sans'), url('./roboto/Roboto-Regular.woff') format('woff'), url('./roboto/Roboto-Regular.ttf') format('truetype'), url('./roboto/Roboto-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('./roboto-slab/RobotoSlab-Regular.eot');
+  src: local('PT Sans'), url('./roboto-slab/RobotoSlab-Regular.woff') format('woff'), url('./roboto-slab/RobotoSlab-Regular.ttf') format('truetype'), url('./roboto-slab/RobotoSlab-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
