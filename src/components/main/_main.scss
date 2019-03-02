@@ -2,4 +2,34 @@
   width: 100%;
   min-height: 99.4rem;
   border: 3px dashed red;
+  background-color: rgb(32, 32, 32);
+  background-image: url('../../img/bg.png');
+  clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+
+  &__logo {
+
+  }
+
+  &__slogan-small {
+    font-size: 2.4rem;
+    color: $color-main;
+    margin-top: 4.5rem;
+  }
+
+  &__slogan {
+    font-size: 7.2rem;
+    color: $color-main;
+    text-transform: uppercase;
+    margin-top: 4.2rem;
+    margin-bottom: 2.1rem;
+  }
+
+  &__decorator {
+
+  }
+
+  &__small-text {
+    font-size: 1.4rem;
+    color: $color-grey-light-3;
+  }
 }

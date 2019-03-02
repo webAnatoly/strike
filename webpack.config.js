@@ -11,12 +11,12 @@ module.exports = function(env, options) {
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].js',
-      publicPath: '/'
+      publicPath: isDevMode ? '/' : './', // в продакшен сделал относительный путь, потому что клиенту буду отдавать верстку просто в zip архиве
     },
     devServer: {
       overlay: true,
-      // host: '192.168.1.33',
-      host: 'localhost',
+      host: '192.168.1.33',
+      // host: 'localhost',
       contentBase: path.join(__dirname, 'dist'),
       watchContentBase: true,
       index: 'index.html',
