@@ -1,7 +1,6 @@
 .main {
   width: 100%;
   min-height: 99.4rem;
-  border: 3px dashed red;
   background-color: rgb(32, 32, 32);
   background-image: url('../../img/bg.png');
   background-position: center;
@@ -16,15 +15,15 @@
   &__slogan-small {
     font-size: 2.4rem;
     color: $color-main;
-    margin-top: 4.5rem;
+    margin-top: 3.4rem;
   }
 
   &__slogan {
     font-size: 7.2rem;
     color: $color-main;
     text-transform: uppercase;
-    margin-top: 4.2rem;
-    margin-bottom: 2.1rem;
+    margin-top: 3.3rem;
+    margin-bottom: 1.2rem;
   }
 
   &__decorator {
@@ -58,11 +57,11 @@
   &__small-text {
     font-size: 1.4rem;
     color: $color-grey-light-3;
-    margin-top: 4.5rem;
+    margin-top: 4.2rem;
   }
 
   &__btn-container {
-    margin-top: 14.1rem;
+    margin-top: 14.47rem;
     display: flex;
     justify-content: center;
     align-items: center;
