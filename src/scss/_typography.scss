@@ -8,3 +8,15 @@ h2 {
   text-transform: uppercase;
   font-family: $font-family-main;
 }
+
+a,
+a:link,
+a:visited {
+  color: $color-grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-second;
+    text-decoration: underline;
+  }
+}

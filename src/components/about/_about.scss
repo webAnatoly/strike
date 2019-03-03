@@ -3,7 +3,7 @@
   margin: auto;
   width: 100%;
   min-height: inherit;
-  padding: 4rem 0;
+  padding: 4rem 2.2rem;
 
   &__shooting-mark {
     position: absolute;
@@ -22,5 +22,9 @@
     & .card {
       margin-bottom: 1rem;
     }
+  }
+
+  &__nav {
+    margin-top: 2.2rem;
   }
 }

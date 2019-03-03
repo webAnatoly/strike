@@ -1,0 +1,50 @@
+.nav {
+  width: 30rem;
+  min-height: 22rem;
+  text-align: left;
+
+  & ul {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+  }
+
+  & li {
+    display: block;
+    width: inherit;
+    min-height: 8rem;
+  }
+
+  &__item {
+    font-size: 2.7rem;
+    display: block;
+    margin-bottom: 2.8rem;
+
+    &:hover {
+      font-size: 3.7rem;
+      color: $color-second;
+      text-decoration: underline;
+    }
+  }
+
+  &__item.nav__item--current {
+    font-size: 3.7rem;
+    color: $color-second;
+    text-decoration: underline;
+  }
+}
+
+
+a,
+a:link,
+a:visited {
+  color: $color-grey;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-second;
+    text-decoration: underline;
+  }
+}
