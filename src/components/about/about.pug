@@ -1,4 +1,36 @@
 .about
-  h2 about us
   include ../../components/shooting-mark/shooting-mark.pug
   +shooting-mark('about__shooting-mark')
+
+  .about__cards
+    //- mixin card() параметый {header: '', text: '', cssClass: ''}
+    include ../../components/card/card.pug
+    - var data = {
+    -   img: '',
+    -   header: 'продуманная защита',
+    -   text: 'Наши читы работают с помощью специально разработанных драйверов с оригинальной подписью. Софт не внедряется в игру',
+    - }
+    +card(data)
+      img(src=require('../img/def.png'), alt="icon picture")
+
+    - var data = {
+    -   header: 'доступные цены',
+    -   text: 'Стоимость софта на прямую зависит от затрат на сервера, оригинальную подпись дравера. Для некоторых читов разработаны удобные тарифы',
+    - }
+    +card(data)
+      img(src=require('../img/price.png'), alt="icon picture")
+
+    - var data = {
+    -   header: 'новое оборудование',
+    -   text: 'Мы имеем собственные сервера, которые обеспечивают быструю работу протектора и инжектора с дорогими сертификатами шифрования',
+    - }
+    +card(data)
+      img(src=require('../img/device.png'), alt="icon picture")
+
+    - var data = {
+    -   header: 'служба поддержки',
+    -   text: 'Техническая поддержка работает 22/7 в нашей группе Вконтакте. На все ваши вопросы и помощь в установке саппорт может ответить в порядке очереди',
+    - }
+    +card(data)
+      img(src=require('../img/head.png'), alt="icon picture")
+

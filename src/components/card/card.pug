@@ -1,0 +1,15 @@
+//- mixin card() параметый {header: '', text: '', cssClass: ''}
+
+mixin card(data)
+  .card
+    .card__icon(class="")
+      block
+    p.card__header= data.header
+    .card__decor-line
+    p.card__text= data.text
+
+
+
+
+
+
