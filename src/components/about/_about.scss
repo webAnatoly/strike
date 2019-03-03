@@ -1,0 +1,14 @@
+.about {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  min-height: inherit;
+  padding: 4rem 0;
+
+  &__shooting-mark {
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

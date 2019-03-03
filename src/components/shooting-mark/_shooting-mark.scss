@@ -1,0 +1,61 @@
+.shooting-mark { // мишень
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-main;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 6.4rem;
+
+  &__outer-2 {
+    width: 4.2rem;
+    height: 4.2rem;
+    border-radius: 100%;
+    border: 3px solid $color-second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__outer-1 {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 100%;
+    border: 3px solid $color-second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__center-point {
+    position: relative;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 100%;
+    background-color: $color-second;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: $color-second;
+      width: 4.6rem;
+      height: .2rem;
+      position: absolute;
+      top: 50%;
+      left: calc(-2.3rem - -.6rem);
+      transform: translate(0, -50%);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: $color-second;
+      width: 4.6rem;
+      height: .2rem;
+      position: absolute;
+      top: .52rem;
+      left: calc(-2.3rem - -.6rem);
+      transform: rotate(90deg);
+    }
+  }
+}
