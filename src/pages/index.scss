@@ -1,7 +1,6 @@
 .screenshots {
   width: 100%;
   min-height: inherit;
-  border: 3px dashed blue;
   padding: 13.3rem 0 0 0;
   position: relative;
 
@@ -32,5 +31,14 @@
       top: 0;
       left: 1rem;
     }
+  }
+
+  &__wrapper {
+    width: 100%;
+    min-height: 96.6rem;
+    margin-top: 12.3rem;
+
+    display: flex;
+    flex-wrap: wrap;
   }
 }
