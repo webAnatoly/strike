@@ -7,7 +7,7 @@ module.exports = function(env, options) {
   const isDevMode = options.mode === 'development';
 
   return {
-    entry: './src/index.js',
+    entry: './src/main.js',
     output: {
       path: path.resolve(__dirname, './dist'),
       filename: 'js/[name].js',
