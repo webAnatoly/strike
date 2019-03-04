@@ -1,6 +1,6 @@
-mixin nav(num)
+mixin nav(num, cssClass)
   - var current = 'nav__item--current';
-  nav.nav
+  nav.nav(class=cssClass)
     ul
       li
         a(href="javascript:void()", class=( num === 0 ? current : '')).nav__item Главная

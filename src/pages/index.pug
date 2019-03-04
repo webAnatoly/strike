@@ -15,7 +15,12 @@ html(lang="ru")
       section.section
         include ../components/start-win/start-win.pug
       section.section
-        h2 скриншоты чита
+        div.screenshots
+          include ../components/nav/nav.pug
+          +nav(2, 'screenshots__nav')
+          h2.screenshots__h2 скриншоты чита
+          p.screenshots__sub-header Тут собрана небольшая галерея скриншотов
+          div.decorator.decorator--reversed
       section.section
         h2 поддерживаемые античиты
       section.section

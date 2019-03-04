@@ -2,6 +2,35 @@
   width: 100%;
   min-height: inherit;
   border: 3px dashed blue;
+  padding: 13.3rem 0 0 0;
+  position: relative;
 
-  
+  @media (max-width: $tab-port) {
+    padding: 1rem;
+  }
+
+  &__h2 {
+    font-size: 3.6rem;
+
+    @media (max-width: $tab-port) {
+      margin-top: 3rem;
+    }
+  }
+
+  &__sub-header {
+    margin: 2.5rem 0 4rem 0;
+    font-size: 1.6rem;
+  }
+
+  &__nav {
+    position: absolute;
+    top: 3.4rem;
+    left: 4.3rem;
+
+    @media (max-width: $tab-port) {
+      position: relative;
+      top: 0;
+      left: 1rem;
+    }
+  }
 }
