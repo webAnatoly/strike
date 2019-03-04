@@ -1,0 +1,126 @@
+.start-win {
+  width: 100%;
+  min-height: 76.5rem;
+  background-color: #1b1919;
+  color: $color-grey-2;
+  display: flex;
+
+  @media (max-width: $phone) {
+    display: block;
+    min-height: 50rem;
+    border: 1px solid transparent;
+  }
+
+  &__left-col {
+    width: 54.5%;
+    min-height: inherit;
+
+    @media (max-width: $phone) {
+      width: 100%;
+      padding-bottom: 3rem;
+    }
+  }
+
+  &__right-col {
+    width: 45.5%;
+    min-height: inherit;
+    background: url('../../img/bg-s.png') no-repeat;
+    background-size: cover;
+
+    @media (max-width: $phone) {
+      width: 100%;
+    }
+  }
+
+  &__ul {
+    list-style: none;
+    margin: 14.4rem 0 0 0;
+    padding: 0;
+    width: 100%;
+    min-height: 53rem;
+
+    @media (max-width: $phone) {
+      margin: 6rem 0 0 0;
+    }
+
+    & .start-win__header {
+      display: block;
+      position: relative;
+      color: $color-main;
+      font-size: 3.6rem;
+
+      & span {
+        color: $color-second;
+      }
+
+      &:after {
+        content: '';
+        display: inline-block;
+        width: .6rem;
+        height: 3.6rem;
+        background-color: $color-second;
+        margin-left: 7.4rem;
+        transform: translateY(.55rem);
+
+        @media (max-width: $tab-port) {
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+
+  &__li {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 10rem;
+    padding-right: 8.6rem;
+    text-align: right;
+
+    @media (max-width: $tab-port) {
+      padding-right: 6rem;
+      padding-left: 1rem;
+
+      &:first-child {
+        text-align: center;
+        padding-right: 0;
+      }
+    }
+
+    @media (max-width: $phone) {
+      padding-right: 12rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 4rem;
+    }
+
+    & .start-win__sub-header {
+      color: $color-second;
+      font-size: 1.8rem;
+      margin-bottom: 1.7rem;
+    }
+
+    & .start-win__text {
+      font-size: 1.4rem;
+    }
+
+    & .start-win__icon-container {
+      width: 7.4rem;
+      height: 7.4rem;
+      background-color: #545353;
+      border-radius: 7.4rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: .5rem;
+      right: -3.7rem;
+
+      @media (max-width: $phone) {
+        right: 2rem;
+      }
+    }
+  }
+}
