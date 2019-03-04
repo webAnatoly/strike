@@ -1,0 +1,34 @@
+.decorator {
+  position: relative;
+  width: .7rem;
+  height: .7rem;
+  background-color: $color-second;
+  border-radius: 1rem;
+  margin: auto;
+
+  &::before,
+  &::after {
+    content: '';
+    width: 8rem;
+    height: 1px;
+    display: block;
+    position: absolute;
+    background-color: $color-grey-light-4;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    left: calc( -8rem + -1.4rem );
+  }
+  &::after {
+    left: calc(.7rem + 1.4rem);
+  }
+
+  &--reversed {
+    &::before,
+    &::after {
+      background-color: $color-grey-2;
+    }
+  }
+}
