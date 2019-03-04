@@ -1,10 +1,12 @@
-nav.nav
-  ul
-    li
-      a(href="javascript:void()").nav__item Главная
-    li
-      a(href="javascript:void()").nav__item.nav__item--current О нас
-    li
-      a(href="javascript:void()").nav__item Скриншоты
-    li
-      a(href="javascript:void()").nav__item Тарифный план
+mixin nav(num)
+  - var current = 'nav__item--current';
+  nav.nav
+    ul
+      li
+        a(href="javascript:void()", class=( num === 0 ? current : '')).nav__item Главная
+      li
+        a(href="javascript:void()", class=( num === 1 ? current : '')).nav__item О нас
+      li
+        a(href="javascript:void()", class=( num === 2 ? current : '')).nav__item Скриншоты
+      li
+        a(href="javascript:void()", class=( num === 3 ? current : '')).nav__item Тарифный план
