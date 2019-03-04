@@ -4,9 +4,9 @@ body {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 3.6rem;
   text-transform: uppercase;
-  font-family: $font-family-main;
+  color: $color-grey-4;
 }
 
 a,
@@ -17,6 +17,6 @@ a:visited {
 
   &:hover {
     color: $color-second;
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
