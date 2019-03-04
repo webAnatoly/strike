@@ -22,6 +22,12 @@ html(lang="ru")
           p.screenshots__sub-header Тут собрана небольшая галерея скриншотов
           div.decorator.decorator--reversed
           .screenshots__wrapper
+            include ../components/modal/modal.pug
+            +modal({header: 'Гибкая помощь в прицеливании'})
+              ul
+                li  Выбор скорости наведения
+                li  Выбор зоны наведения
+                li  Выбор зоны наведения
 
       section.section
         h2 поддерживаемые античиты

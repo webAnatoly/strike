@@ -1,0 +1,16 @@
+.close-btn {
+  width: 5.3rem;
+  height: 5.3rem;
+  background-color: transparent;
+  font-size: 4rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+
+  &__cross {
+    color: $color-second;
+  }
+}

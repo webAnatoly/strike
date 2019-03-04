@@ -1,0 +1,88 @@
+.modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color-grey-4, 0.8);
+  z-index: 1050;
+  outline: 0;
+  transition: opacity .15s linear;
+
+
+  &--open {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  &-dialog {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-content {
+    position: relative;
+    display: block;
+    width: 50rem;
+    min-height: 50rem;
+    background-color: #1b1919;
+    border-radius: 2px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.5);
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 5rem .5rem 2rem;
+    min-height: 5rem;
+
+    & .modal__title {
+      display: block;
+      color: $color-grey-light-3;
+      font-size: 2rem;
+    }
+
+    & .modal__close-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__body {
+    padding: 0;
+    color: $color-grey-light-3;
+
+    & .modal__video-wrapper {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding: 0;
+      overflow: hidden;
+
+      & .modal__video {
+        width: 100%;
+      }
+    }
+
+    & ul {
+      display: block;
+      text-align: left;
+      margin: auto;
+      margin-top: 2rem;
+      width: 80%;
+    }
+
+    & li {
+      margin-bottom: 1rem;
+    }
+  }
+}

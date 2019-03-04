@@ -1,0 +1,19 @@
+mixin modal(opt)
+  .modal(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal__header
+          span.modal__title= opt ? opt.header : ''
+          include ../../components/buttons/close-btn/close-btn.pug
+          +close-btn('modal__close-btn')
+        .modal__body
+          .modal__video-wrapper
+            video.modal__video(autoplay='', muted='', loop='')
+              source(src=require('../media/rage.webm'), type='video/webm')
+              source(src=require('../media/rage.mp4'), type='video/mp4')
+          block
+          //- здесь ожидается блок ul
+          //- ul
+          //-   li  Выбор скорости наведения
+          //-   li  Выбор зоны наведения
+          //-   li  Выбор зоны наведения
