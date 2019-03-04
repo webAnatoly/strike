@@ -9,6 +9,11 @@
   background-size: cover;
   clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
 
+  @media (max-width: $tab-port) {
+    clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
+    padding: 0 .5rem .5rem .5rem;
+  }
+
   &__logo {
 
   }
@@ -25,6 +30,10 @@
     text-transform: uppercase;
     margin-top: 3.3rem;
     margin-bottom: 1.2rem;
+
+    @media (max-width: $phone) {
+      font-size: 5rem;
+    }
   }
 
   &__decorator {
@@ -68,8 +77,12 @@
     align-items: center;
     flex-wrap: wrap;
 
-    & .btn-rect:not(:last-child) {
-      margin-right: 3rem;
+    & .btn-rect {
+      margin: 0 1.5rem;
+
+      @media (max-width: $phone) {
+        margin-bottom: 2rem;
+      }
     }
   }
 }
