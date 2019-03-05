@@ -23,20 +23,30 @@ html(lang="ru")
           div.decorator.decorator--reversed
           .screenshots__wrapper
             include ../components/card_2/card_2.pug
-            +card_2()
-            +card_2()
-            +card_2()
-            +card_2()
-            +card_2()
-            +card_2()
-            +card_2()
-            +card_2()
+            +card_2({data: 'sheat_01', title: 'Название чита'})
+            +card_2({data: 'sheat_02', title: 'Название чита'})
+            +card_2({data: 'sheat_03', title: 'Название чита'})
+            +card_2({data: 'sheat_04', title: 'Название чита'})
+            +card_2({data: 'sheat_05', title: 'Название чита'})
+            +card_2({data: 'sheat_06', title: 'Название чита'})
+            +card_2({data: 'sheat_07', title: 'Название чита'})
+            +card_2({data: 'sheat_08', title: 'Название чита'})
             include ../components/modal/modal.pug
-            +modal({header: 'Гибкая помощь в прицеливании'})
+            +modal({header: 'Гибкая помощь в прицеливании', id: 'sheat_01'})
               ul
                 li  Выбор скорости наведения
                 li  Выбор зоны наведения
                 li  Выбор зоны наведения
+            +modal({header: 'Название чита', id: 'sheat_02'})
+              ul
+                li  Перечисление возможностей
+                li  Перечисление возможностей
+            +modal({header: 'Название чита', id: 'sheat_03'})
+            +modal({header: 'Название чита', id: 'sheat_04'})
+            +modal({header: 'Название чита', id: 'sheat_05'})
+            +modal({header: 'Название чита', id: 'sheat_06'})
+            +modal({header: 'Название чита', id: 'sheat_07'})
+            +modal({header: 'Название чита', id: 'sheat_08'})
 
       section.section
         h2 поддерживаемые античиты
