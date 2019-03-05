@@ -67,8 +67,7 @@
   &__row {
     width: 100%;
     min-height: 51rem;
-    background-color: #635c43;
-    background-size: cover;
+    background: #635c43 url('../img/bg-2.png') no-repeat center / cover; 
     margin-top: 14.4rem;
     display: flex;
     justify-content: center;
@@ -82,7 +81,7 @@
         margin-right: 7rem;
       }
       @media (max-width: $phone) {
-        margin-right: 2rem;
+        margin-right: 0;
       }
     }
   }
