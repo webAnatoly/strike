@@ -2,7 +2,10 @@ mixin card_2(opt)
   .card_2(data-target= opt ? opt.data : '')
     .card_2__body
       .card_2__icon-holder
-        img(src="", alt="cheat picture", srcset="")
+        img(src="")
       .card_2__title= (opt ? opt.title : 'Название чита')
     .card_2__footer
       p.card_2__footer-text Подробнее
+    .card_2__bg-layer
+      block
+      //- img

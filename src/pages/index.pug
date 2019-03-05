@@ -24,13 +24,21 @@ html(lang="ru")
           .screenshots__wrapper
             include ../components/card_2/card_2.pug
             +card_2({data: 'sheat_01', title: 'Название чита'})
+              img(src=require('../img/1.png'))
             +card_2({data: 'sheat_02', title: 'Название чита'})
+              img(src=require('../img/2.png'))
             +card_2({data: 'sheat_03', title: 'Название чита'})
+              img(src=require('../img/3.png'))
             +card_2({data: 'sheat_04', title: 'Название чита'})
+              img(src=require('../img/4.png'))
             +card_2({data: 'sheat_05', title: 'Название чита'})
+              img(src=require('../img/5.png'))
             +card_2({data: 'sheat_06', title: 'Название чита'})
+              img(src=require('../img/6.png'))
             +card_2({data: 'sheat_07', title: 'Название чита'})
+              img(src=require('../img/7.png'))
             +card_2({data: 'sheat_08', title: 'Название чита'})
+              img(src=require('../img/8.png'))
             include ../components/modal/modal.pug
             +modal({header: 'Гибкая помощь в прицеливании', id: 'sheat_01'})
               ul
