@@ -55,9 +55,18 @@ html(lang="ru")
             +modal({header: 'Название чита', id: 'sheat_06'})
             +modal({header: 'Название чита', id: 'sheat_07'})
             +modal({header: 'Название чита', id: 'sheat_08'})
-
       section.section
-        h2 поддерживаемые античиты
+        .anticheats
+          h2.anticheats__h2 поддерживаемые античиты
+          p.anticheats__sub-header Текст по желанию
+          div.decorator.decorator--reversed
+          .anticheats__row
+            include ../components/card-small/card-small.pug
+            +card-small({text: 'SourceMode Anti-Cheat', cssClass: 'anticheat-card-small'})
+            +card-small({text: 'Kickback', cssClass: 'anticheat-card-small'})
+            +card-small({text: 'CSPL', cssClass: 'anticheat-card-small'})
+            +card-small({text: 'FastCup', cssClass: 'anticheat-card-small'})
+            +card-small({text: 'Dizard', cssClass: 'anticheat-card-small'})
       section.section
         h2 тарифный план
       footer.footer
