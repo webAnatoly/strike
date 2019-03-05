@@ -22,6 +22,15 @@ html(lang="ru")
           p.screenshots__sub-header Тут собрана небольшая галерея скриншотов
           div.decorator.decorator--reversed
           .screenshots__wrapper
+            include ../components/card_2/card_2.pug
+            +card_2()
+            +card_2()
+            +card_2()
+            +card_2()
+            +card_2()
+            +card_2()
+            +card_2()
+            +card_2()
             include ../components/modal/modal.pug
             +modal({header: 'Гибкая помощь в прицеливании'})
               ul
