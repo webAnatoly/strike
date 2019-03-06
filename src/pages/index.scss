@@ -71,7 +71,7 @@
   &__row {
     width: 100%;
     min-height: 51rem;
-    background: #635c43 url('../img/bg-2.png') no-repeat center / cover; 
+    background: $color-third url('../img/bg-2.png') no-repeat center / cover; 
     margin-top: 14.4rem;
     display: flex;
     justify-content: center;
@@ -114,6 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px -22px 70px -10px rgba(0,0,0,0.75);
 
     & .pricing-period-money {
       font-size: 5.5rem;
@@ -122,12 +123,13 @@
 
   &__slider-container {
     height: 23rem;
+    background: $color-grey-light-3 url('../img/bg-4.png') no-repeat center / cover; 
   }
 
   &__slogan-section {
     position: relative;
     min-height: 47.5rem;
-    background: #635c43 url('../img/bg-3.png') no-repeat center / cover; 
+    background: $color-third url('../img/bg-3.png') no-repeat center / cover; 
     color: $color-main;
     font-size: 3.6rem;
     text-transform: uppercase;
