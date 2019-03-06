@@ -23,6 +23,7 @@ html(lang="ru")
           div.decorator.decorator--reversed
           .screenshots__wrapper
             include ../components/card_2/card_2.pug
+            //- каждая карточка содержит аттрибут data-target в котором хранится id соответствующего ей скрытого по умолчанию модального окна
             +card_2({data: 'sheat_01', title: 'Название чита'})
               img(src=require('../img/1.png'))
             +card_2({data: 'sheat_02', title: 'Название чита'})
@@ -31,14 +32,8 @@ html(lang="ru")
               img(src=require('../img/3.png'))
             +card_2({data: 'sheat_04', title: 'Название чита'})
               img(src=require('../img/4.png'))
-            +card_2({data: 'sheat_05', title: 'Название чита'})
-              img(src=require('../img/5.png'))
-            +card_2({data: 'sheat_06', title: 'Название чита'})
-              img(src=require('../img/6.png'))
-            +card_2({data: 'sheat_07', title: 'Название чита'})
-              img(src=require('../img/7.png'))
-            +card_2({data: 'sheat_08', title: 'Название чита'})
-              img(src=require('../img/8.png'))
+            
+            //- модальные окна для каждой card_2
             include ../components/modal/modal.pug
             +modal({header: 'Гибкая помощь в прицеливании', id: 'sheat_01'})
               ul
@@ -51,10 +46,6 @@ html(lang="ru")
                 li  Перечисление возможностей
             +modal({header: 'Название чита', id: 'sheat_03'})
             +modal({header: 'Название чита', id: 'sheat_04'})
-            +modal({header: 'Название чита', id: 'sheat_05'})
-            +modal({header: 'Название чита', id: 'sheat_06'})
-            +modal({header: 'Название чита', id: 'sheat_07'})
-            +modal({header: 'Название чита', id: 'sheat_08'})
       section.section
         .anticheats
           h2.anticheats__h2 поддерживаемые античиты

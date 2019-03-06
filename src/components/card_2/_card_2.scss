@@ -5,7 +5,8 @@
   overflow: hidden;
   color: $color-main;
   cursor: pointer;
-  box-shadow: 1px 1px 7px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 7px rgba(248, 193, 193, 0.5);
+  border-radius: .5rem;
 
   &:hover {
     cursor: pointer;
