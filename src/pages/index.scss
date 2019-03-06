@@ -37,19 +37,15 @@
     width: 100%;
     min-height: 55rem;
     margin-top: 12.3rem;
-    // background-color: $color-grey-2;
     background-color: $color-third;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    // padding: 1rem;
+    padding: 2rem 0;
 
     & .card_2 {
       margin: 2rem;
-      // &:not(:last-child) {
-      //   margin-right: 3rem;
-      // }
     }
   }
 }
