@@ -1,3 +1,10 @@
 .footer {
   min-height: 9rem;
+  color: $color-grey-2;
+  background: $color-fifth no-repeat center / cover;
+  font-size: 1.4rem;
+
+  &__row {
+    padding: 3rem 1rem;
+  }
 }
