@@ -92,3 +92,53 @@
 
 
 }
+
+.pricing {
+  border: 3px dashed green;
+
+  &__title {
+    margin-top: 25rem;
+    margin-bottom: 2.3rem;
+    font-size: 5.37rem;
+  }
+
+  &__period {
+    margin-top: 5.5rem;
+    background-color: $color-second;
+    color: $color-grey-light;
+    min-height: 12.5rem;
+    text-align: center;
+    vertical-align: center;
+    font-size: 2.9rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .pricing-period-money {
+      font-size: 5.5rem;
+    }
+  }
+
+  &__slider-container {
+    height: 23rem;
+  }
+
+  &__slogan-section {
+    position: relative;
+    min-height: 47.5rem;
+    background: #635c43 url('../img/bg-3.png') no-repeat center / cover; 
+    color: $color-main;
+    font-size: 3.6rem;
+    text-transform: uppercase;
+    line-height: 5.4rem;
+    padding-top: 7.2rem;
+
+    & .slogan-section-btn {
+      position: absolute;
+      top: -2.5rem;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+  }
+}

@@ -58,8 +58,22 @@ html(lang="ru")
             +card-small({text: 'CSPL', cssClass: 'anticheat-card-small'})
             +card-small({text: 'FastCup', cssClass: 'anticheat-card-small'})
             +card-small({text: 'Dizard', cssClass: 'anticheat-card-small'})
-      section.section
-        h2 тарифный план
+      section.section.pricing
+        p.pricing__title 
+          span.marked RED-DRAGON
+          |  для CS:GO
+        div.decorator.decorator--reversed.pricing-decorator
+        p.pricing__period
+          span.pricing-period-money 76р /
+          span.pricing-period-days на 12 дней
+        .pricing__slider-container
+          //- тут будет слайдер
+        .pricing__slogan-section
+          button.btn-rect.slogan-section-btn приобрести чит
+          p.slogan-section
+            | начни пользоваться <br> прямо 
+            span.marked сейчас
+        
       footer.footer
         h2 footer
 
