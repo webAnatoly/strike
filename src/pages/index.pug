@@ -23,13 +23,13 @@ html(lang="ru")
             include ../components/card_2/card_2.pug
             //- каждая карточка содержит аттрибут data-target в котором хранится id соответствующего ей скрытого по умолчанию модального окна
             +card_2({data: 'sheat_01', title: 'Название чита', img: require('../components/card_2/c2-brain.png')})
-              img(src=require('../img/1.png'))
+              //- img(src=require('../img/1.png'))
             +card_2({data: 'sheat_02', title: 'Название чита', img: require('../components/card_2/c2-rabbit.png')})
-              img(src=require('../img/2.png'))
+              //- img(src=require('../img/2.png'))
             +card_2({data: 'sheat_03', title: 'Название чита', img: require('../components/card_2/c2-eye.png')})
-              img(src=require('../img/3.png'))
+              //- img(src=require('../img/3.png'))
             +card_2({data: 'sheat_04', title: 'Название чита', img: require('../components/card_2/c2-shootingmark.png')})
-              img(src=require('../img/4.png'))
+              //- img(src=require('../img/4.png'))
             
             //- модальные окна для каждой card_2
             include ../components/modal/modal.pug
