@@ -8,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(100% 0, 100% 88%, 50% 100%, 0 88%, 0 0);
+  border: 1px solid transparent;
 
   @media (max-width: $tab-port) {
     clip-path: polygon(100% 0, 100% 96%, 50% 100%, 0 96%, 0 0);
@@ -15,7 +16,10 @@
   }
 
   &__logo {
-
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+    width: 19.5rem;
   }
 
   &__slogan-small {
