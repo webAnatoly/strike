@@ -94,7 +94,7 @@
 }
 
 .pricing {
-  
+
 
   &__title {
     margin-top: 25rem;
@@ -124,6 +124,9 @@
   &__slider-container {
     height: 23rem;
     background: $color-grey-light-3 url('../img/bg-4.png') no-repeat center / cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__slogan-section {
