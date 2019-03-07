@@ -3,10 +3,11 @@
   width: 42rem;
   height: 42rem;
   overflow: hidden;
-  color: $color-main;
+  color: $color-main--reversed;
   cursor: pointer;
   box-shadow: 1px 1px 7px rgba(248, 193, 193, 0.5);
-  border-radius: .5rem;
+  border-radius: 2rem;
+  background-color: $color-main;
 
   &:hover {
     cursor: pointer;
@@ -44,14 +45,15 @@
     align-items: center;
     padding: .5rem;
     font-size: 2.2rem;
-    color: $color-second;
+    color: $color-main;
+    background-color: $color-third;
   }
 
   &__footer-text {
     z-index: 2;
     padding: .5rem 1rem;
-    background: black;
     border-radius: 2px;
+    text-transform: uppercase;
   }
 
   &__bg-layer { // слой используемый в качестве фонового
