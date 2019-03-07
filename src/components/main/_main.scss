@@ -22,6 +22,16 @@
     }
   }
 
+  &__text-logo {
+    color: $color-main;
+    text-transform: uppercase;
+    font-size: 6rem;
+
+    @media (max-width: $phone) {
+      font-size: 4.5rem;
+    }
+  }
+
   &__slogan-small {
     font-size: 2.4rem;
     color: $color-main;
