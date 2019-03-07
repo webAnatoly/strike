@@ -30,12 +30,24 @@
     height: 5.2rem;
     width: 5.2rem;
     border-radius: 100%;
-    background: yellow;
+    // background: #f4dcde;
+    background: rgba($color-grey-light, 0.2);
     position: absolute;
     top: 0;
     left: 50%;
     // transform: translate(-50%);
     z-index: 5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    & .range-slider-shooting-mark {
+      width: 80%;
+      height: 80%;
+      background: #f4dcde;
+    }
   }
 }
 
