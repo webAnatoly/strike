@@ -89,4 +89,12 @@
       transform: translateX(-50%);
     }
   }
+
+  & .about-arrow-btn {
+    transform: translateY(-19rem);
+
+    @media (max-width:$tab-port) {
+      transform: translateY(-12rem);
+    }
+  }
 }

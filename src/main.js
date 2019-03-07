@@ -4,7 +4,6 @@ import initCloseModal from './components/modal/modal';
 import RangeSlider from './components/inputs/range-slider/range-slider';
 
 function main() {
-  console.log('test my build');
   card2init();
   initCloseModal();
   const rangeSlider = new RangeSlider();

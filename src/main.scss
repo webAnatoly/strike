@@ -14,6 +14,8 @@
 @import './components/start-win/start-win';
 
 @import './components/buttons/btn-rect';
+@import './components/buttons/close-btn/close-btn';
+@import './components/buttons/arrow-btn//arrow-btn';
 @import './components/inputs/range-slider/range-slider';
 @import './components/shooting-mark/shooting-mark';
 @import './components/card/card';
@@ -21,7 +23,6 @@
 @import './components/card-small/card-small';
 @import './components/nav/nav';
 @import './components/decorator/decorator';
-@import './components/buttons/close-btn/close-btn';
 @import './components/modal/modal';
 
 @import './pages/index';
