@@ -1,10 +1,10 @@
 mixin card_2(opt)
-  .card_2(data-target= opt ? opt.data : '')
+  .card_2
     .card_2__body
       .card_2__icon-holder
         img(src=opt.img)
       .card_2__title= (opt ? opt.title : 'Название чита')
-    .card_2__footer
+    .card_2__footer(data-target= opt ? opt.data : '')
       p.card_2__footer-text Подробнее
     .card_2__bg-layer
       block
