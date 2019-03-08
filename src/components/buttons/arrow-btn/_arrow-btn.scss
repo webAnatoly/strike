@@ -60,6 +60,10 @@
   }
 }
 
+.arrow-btn--reversed {
+    transform: rotate(180deg);
+}
+
 
 @keyframes shadow {
   from {

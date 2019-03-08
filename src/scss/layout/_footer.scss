@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   min-height: 9rem;
   color: $color-grey-2;
   background: $color-fifth no-repeat center / cover;
@@ -6,5 +7,11 @@
 
   &__row {
     padding: 3rem 1rem;
+  }
+
+  &-arrow-btn {
+    position: absolute;
+    left: 2rem;
+    top: -1rem;
   }
 }

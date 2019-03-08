@@ -7,14 +7,14 @@ html(lang="ru")
     title Приватный софт для CS:GO
   body
     h1.visually-hidden Приватный софт для cs:go
-    .wrapper.wrapper-index
+    .wrapper.wrapper-index#wrapper-top
       section.section
         include ../components/main/main.pug
-      section.section
+      section.section#section-about
         include ../components/about/about.pug
       section.section
         include ../components/start-win/start-win.pug
-      section.section
+      section.section#section-screenshots
         div.screenshots
           h2.screenshots__h2 скриншоты чита
           p.screenshots__sub-header Тут собрана небольшая галерея скриншотов
@@ -46,6 +46,8 @@ html(lang="ru")
             +modal({header: 'Название чита', id: 'sheat_04'})
       section.section
         .anticheats
+          include ../components/buttons/arrow-btn/arrow-btn.pug
+          +arrow-btn({cssClasses: 'anticheats-arrow-btn',  innerLinkId: '#section-pricing'})
           h2.anticheats__h2 поддерживаемые античиты
           p.anticheats__sub-header Текст по желанию
           div.decorator.decorator--reversed
@@ -56,7 +58,7 @@ html(lang="ru")
             +card-small({text: 'CSPL', cssClass: 'anticheat-card-small'})
             +card-small({text: 'FastCup', cssClass: 'anticheat-card-small'})
             +card-small({text: 'Dizard', cssClass: 'anticheat-card-small'})
-      section.section.pricing
+      section.section.pricing#section-pricing
         p.pricing__title 
           span.marked RED-DRAGON
           |  для CS:GO
@@ -74,6 +76,8 @@ html(lang="ru")
             span.marked сейчас
         
       footer.footer
+        include ../components/buttons/arrow-btn/arrow-btn.pug
+        +arrow-btn({cssClasses: 'footer-arrow-btn arrow-btn--reversed', innerLinkId: '#wrapper-top'})
         .row.footer__row
           .col-6.footer__col
             //- p место для иконок____
