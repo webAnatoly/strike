@@ -8,7 +8,7 @@ class RangeSlider {
       price: document.querySelector('.pricing-period-money'),
       days: document.querySelector('.pricing-period-days'),
     };
-    this.pricePerDay = 6; // цена за день по умолчанию
+    this.pricePerDay = 35; // цена за день по умолчанию
 
     this.nativeRange.addEventListener('input', this._inputHandler.bind(this));
     this._setThumbPosition(50);
