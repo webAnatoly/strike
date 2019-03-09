@@ -94,31 +94,51 @@
     font-size: 5.37rem;
   }
 
-  &__period {
-    margin-top: 5.5rem;
-    background-color: $color-second;
-    color: $color-grey-light;
-    min-height: 12.5rem;
-    text-align: center;
-    vertical-align: center;
-    font-size: 2.9rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px -22px 70px -10px rgba(0,0,0,0.75);
+  &__calculator-wrapper {
+    width: 80%;
+    margin: 5.5rem auto;
+    border-radius: 5rem;
+    overflow: hidden;
 
-    & .pricing-period-money {
-      font-size: 5.5rem;
+    .pricing__period {
+      background-color: $color-second;
+      color: $color-grey-light;
+      min-height: 12.5rem;
+      text-align: center;
+      vertical-align: center;
+      font-size: 2.9rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 1px -22px 70px -10px rgba(0,0,0,0.75);
+  
+      & .pricing-period-money {
+        font-size: 5.5rem;
+      }
     }
-  }
 
-  &__slider-container {
-    height: 23rem;
-    background: $color-grey-light-3 url('../img/bg-4.png') no-repeat center / cover; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .calculator-wrapper-scale-container {
+      position: absolute;
+      border: 1px solid red;
+      width: 100%;
+      top: 5rem;
+      display: flex;
+      justify-content: space-between;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    .pricing__range-slider-wrapper {
+      height: 23rem;
+      background: $color-grey-light-3 url('../img/bg-4.png') no-repeat center / cover; 
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__slogan-section {

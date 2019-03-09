@@ -49,6 +49,11 @@
       background: #f4dcde;
     }
   }
+
+  &__scale {
+    border: 1px solid red;
+    width: 100%;
+  }
 }
 
 .range-slider {
