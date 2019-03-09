@@ -70,11 +70,26 @@ html(lang="ru")
             span.pricing-period-days на 12 дней
           .pricing__range-slider-wrapper
             .calculator-wrapper-scale-container
-              span 1 день
-              span 14 дней
-              span 30 дней
-              span 60 дней
-              span 180 дней
+              p
+                span.scale-number 1
+                | 
+                span.scale-word день
+              p
+                span.scale-number 14
+                | 
+                span.scale-word дней
+              p
+                span.scale-number 30
+                | 
+                span.scale-word дней
+              p
+                span.scale-number 60
+                | 
+                span.scale-word дней
+              p
+                span.scale-number 180
+                | 
+                span.scale-word дней
             //- тут будет слайдер
             include ../components/inputs/range-slider/range-slider.pug
         .pricing__slogan-section

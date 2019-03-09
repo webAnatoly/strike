@@ -9,6 +9,7 @@ class RangeSlider {
       days: document.querySelector('.pricing-period-days'),
     };
     this.pricePerDay = 35; // цена за день по умолчанию
+    this.maxDays = 180;
 
     this.nativeRange.addEventListener('input', this._inputHandler.bind(this));
     this._setThumbPosition(50);
@@ -16,9 +17,12 @@ class RangeSlider {
 
   _inputHandler(e) {
     const currentValue = parseInt(e.target.value, 10);
+    console.log('currentValue', currentValue);
     this._setThumbPosition(currentValue);
     this._setTrackPosition(currentValue);
-    this._showPrice(currentValue);
+    if (currentValue > 0) {
+      this._showPrice(currentValue);
+    }
   }
 
   _setThumbPosition(value) {
@@ -39,12 +43,24 @@ class RangeSlider {
     this.pricePerDay = price;
   }
 
-  _showPrice(days) {
-    const d = days;
-    const totalPrice = d * this.pricePerDay;
+  _showPrice(value) {
+    let day = parseInt(value / 100 * this.maxDays, 10);
+
+    if (value <= 21) { day = 1; }
+    if (value >= 21 && value <= 45) { day = 14; }
+    if (value >= 45 && value <= 71) { day = 30; }
+    if (value >= 71 && value <= 90) { day = 60; }
+    if (value > 90) { day = 180; }
+
+    const totalPrice = day * this.pricePerDay;
 
     this.views.price.innerHTML = `${totalPrice} / `;
-    this.views.days.innerHTML = ` на ${days} дней `;
+
+    if (day === 1) {
+      this.views.days.innerHTML = ` на ${day} день `;
+    } else {
+      this.views.days.innerHTML = ` на ${day} дней `;
+    }
   }
 }
 
