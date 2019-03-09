@@ -4,8 +4,8 @@ function clickHandler(e) {
   try {
     // получить значение id, которое я храню в аттрибуте карточки data-target
     targetID = e.currentTarget.dataset.target;
-  } catch (e) {
-    console.log('problem with getting dataset.target property', e);
+  } catch (err) {
+    console.log('problem with getting dataset.target property', err);
   }
 
   if (targetID !== undefined) {
