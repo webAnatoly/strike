@@ -7,10 +7,9 @@ mixin modal(opt)
           include ../../components/buttons/close-btn/close-btn.pug
           +close-btn('modal__close-btn')
         .modal__body
-          .modal__video-wrapper
-            video.modal__video(autoplay='', muted='', loop='')
-              source(src=require('../media/rage.webm'), type='video/webm')
-              source(src=require('../media/rage.mp4'), type='video/mp4')
+          .modal__embed-wrapper
+            .modal__embed
+              img(src=opt ? opt.picture : '', alt="modal picture")
           block
           //- здесь ожидается блок ul
           //- ul

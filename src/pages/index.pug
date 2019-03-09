@@ -33,17 +33,23 @@ html(lang="ru")
             
             //- модальные окна для каждой card_2
             include ../components/modal/modal.pug
-            +modal({header: 'Гибкая помощь в прицеливании', id: 'sheat_01'})
+            +modal({header: 'Гибкая помощь в прицеливании', id: 'sheat_01', picture: require('../img/1.png')})
               ul
                 li  Выбор скорости наведения
                 li  Выбор зоны наведения
                 li  Выбор зоны наведения
-            +modal({header: 'Название чита', id: 'sheat_02'})
+            +modal({header: 'Название чита', id: 'sheat_02', picture: require('../img/2.png')})
               ul
                 li  Перечисление возможностей
                 li  Перечисление возможностей
-            +modal({header: 'Название чита', id: 'sheat_03'})
-            +modal({header: 'Название чита', id: 'sheat_04'})
+            +modal({header: 'Название чита', id: 'sheat_03', picture: require('../img/3.png')})
+              ul
+                li  Перечисление возможностей
+                li  Перечисление возможностей
+            +modal({header: 'Название чита', id: 'sheat_04', picture: require('../img/4.png')})
+              ul
+                li  Перечисление возможностей
+                li  Перечисление возможностей
       section.section
         .anticheats
           include ../components/buttons/arrow-btn/arrow-btn.pug
