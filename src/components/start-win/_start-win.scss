@@ -28,7 +28,7 @@
     background-size: cover;
 
     @media (max-width: $phone) {
-      width: 100%;
+      display: none;
     }
   }
 
