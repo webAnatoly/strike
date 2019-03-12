@@ -7,12 +7,12 @@
     cursor: pointer;
     & .arrow-btn__top-arrow {
       // transform: translateY(-2px);
-      animation: animation-hover 1s ease-in-out infinite;
+      animation: animation-hover 1s alternate infinite;
     }
 
     & .arrow-btn__bottom-arrow {
       // transform: translateY(2px);
-      animation: animation-hover 1s ease-in-out infinite;
+      animation: animation-hover 1s alternate infinite;
     }
   }
 
@@ -78,9 +78,9 @@
 }
 @keyframes animation-hover{
   from {
-    transform: translateY(-3px) scale(1.1);
+    transform: translateY(0) scale(1.1);
   }
   to {
-    transform: translateY(1px) scale(1);
+    transform: translateY(13px) scale(1.1);
   }
 }
