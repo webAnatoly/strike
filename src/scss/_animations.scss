@@ -1,0 +1,13 @@
+// анимация для кнопок
+// При наводке на кнопку она плавно становится немного больше и когда ты убераешь курсор она плавно становится меньше
+
+.anim-resize {
+  transition: all .4s ease-in-out;
+  backface-visibility: hidden;
+
+  &:hover {
+    transform: scale(1.05);
+    backface-visibility: hidden;
+    box-shadow: 1px -3px 77px 2px rgba(184,87,77,.5);
+  }
+}

@@ -168,7 +168,15 @@
       position: absolute;
       top: -2.5rem;
       left: 50%;
-      transform: translateX(-50%)
+      transform: translateX(-50%);
+      transition: all .4s ease-in-out;
+      backface-visibility: hidden;
+
+      &:hover {
+        transform: translateX(-50%) scale(1.05);
+        backface-visibility: hidden;
+        box-shadow: 1px -3px 77px 2px rgba(184,87,77,.5);
+      }
     }
   }
 }
