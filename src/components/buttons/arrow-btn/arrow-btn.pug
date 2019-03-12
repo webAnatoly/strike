@@ -1,6 +1,13 @@
 mixin arrow-btn(options)
-  a(href=options ? options.innerLinkId : "javascript:void(0);")
-    .arrow-btn(role="button", class=options ? options.cssClasses : '')
+  - var address = "";
+
+  - if (options) {
+  -  if (options.innerLinkId) {
+  -    address = "location.href=" + "'" + options.innerLinkId + "'";
+  -  }
+  - }
+
+    .arrow-btn(role="button", class=options ? options.cssClasses : '', onclick=address)
       .arrow-btn__top-arrow
         .arrow-btn__decorator
         <svg height="84" width="84" viewBox="0 0 84 84" class="svg__arrow-btn-top-arrow">
