@@ -2,7 +2,6 @@
   width: 8.3rem;
   height: 8.3rem;
   cursor: pointer;
-  border: 1px solid red;
 
   &:hover {
     cursor: pointer;
@@ -67,11 +66,14 @@
 
 
 @keyframes shadow {
-  from {
+  0%{
     box-shadow: 1px -3px 66px 38px rgba(#b8574d, 0.9);
   }
-  to {
+  50% {
     box-shadow: 1px -3px 77px 33px rgba(#b8574d, 0.9);
+  }
+  100%{
+    box-shadow: 1px -3px 66px 38px rgba(#b8574d, 0.9);
   }
 }
 @keyframes animation-hover{
