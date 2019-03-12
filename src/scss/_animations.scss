@@ -11,3 +11,18 @@
     box-shadow: 1px -3px 77px 2px rgba(184,87,77,.5);
   }
 }
+
+.anim-appear {
+  animation: .5s slow-appear;
+
+
+  @keyframes slow-appear {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
