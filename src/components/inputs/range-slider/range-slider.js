@@ -157,6 +157,16 @@ class RangeSlider {
     } else {
       this.views.days.innerHTML = ` на ${d} дней `;
     }
+    const str = `#${totalPrice}рублей / на ${d} дней`; // клиент захотел чтобы цена записывалась в аттрибут href (думаю это придется переделывать)
+    this.setHref(document.getElementById('calculatorAnchor'), str);
+  }
+
+  setHref(elem, str) {
+    // метод получает елемет <a> и переписывает ему аттрибут href 
+    if (elem && elem.attributes.href) {
+      const s = String(str);
+      elem.setAttribute('href', s);
+    }
   }
 }
 
