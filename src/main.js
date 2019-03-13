@@ -10,6 +10,18 @@ function main() {
   rangeSlider.init({
     sliderContainer: document.getElementById('rangeSliderContainerOne'),
   });
+
+  const test = () => {
+    require.ensure(['./data/data.js'], (require) => {
+      const d = require('./data/data.js');
+
+      console.log(d.default);
+    }, 'data');
+  }
+
+  setTimeout(() => {
+    test();
+  }, 5000);
 }
 
 document.addEventListener('DOMContentLoaded', main);
