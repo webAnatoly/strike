@@ -1,6 +1,25 @@
 const data = {
-  1: {price: 30, link: 'http://site.ru'},
-  7: {price: 30, link: 'http://site.ru'},
+  1: {price: 30, link: 'https://pay2store.com/buy/35803/'},
+  7: {price: 140, link: 'https://pay2store.com/buy/35803/'},
+  8: {price: 160, link: 'https://pay2store.com/buy/35803/'},
+  9: {price: 180, link: 'https://pay2store.com/buy/35803/'},
+  10: {price: 200, link: 'https://pay2store.com/buy/35803/'},
+  11: {price: 220, link: 'https://pay2store.com/buy/35803/'},
+  12: {price: 240, link: 'https://pay2store.com/buy/35803/'},
+  13: {price: 260, link: 'https://pay2store.com/buy/35803/'},
+  14: {price: 266, link: 'https://pay2store.com/buy/35803/'},
+  16: {price: 304, link: 'https://pay2store.com/buy/35803/'},
+  18: {price: 342, link: 'https://pay2store.com/buy/35803/'},
+  20: {price: 380, link: 'https://pay2store.com/buy/35803/'},
+  22: {price: 418, link: 'https://pay2store.com/buy/35803/'},
+  24: {price: 456, link: 'https://pay2store.com/buy/35803/'},
+  26: {price: 494, link: 'https://pay2store.com/buy/35803/'},
+  28: {price: 532, link: 'https://pay2store.com/buy/35803/'},
+  30: {price: 570, link: 'https://pay2store.com/buy/35803/'},
+  45: {price: 720, link: 'https://pay2store.com/buy/35803/'},
+  60: {price: 960, link: 'https://pay2store.com/buy/35803/'},
+  90: {price: 1440, link: 'https://pay2store.com/buy/35803/'},
+  180: {price: 1999, link: 'http://www.google.com'},
 };
 
-export default data;
+module.exports = data;

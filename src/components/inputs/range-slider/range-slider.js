@@ -8,12 +8,12 @@ class RangeSlider {
       price: document.querySelector('.pricing-period-money'),
       days: document.querySelector('.pricing-period-days'),
     };
-    this.pricePerDay = 35; // цена за день по умолчанию
+    this.data = options.data;
     this.maxDays = 180;
 
     this.nativeRange.addEventListener('input', this._inputHandler.bind(this));
     this._setThumbPosition(50);
-    this._showPrice(30);
+    this._showPrice(30, this.data[30]['price']);
   }
 
   _inputHandler(e) {
@@ -140,25 +140,31 @@ class RangeSlider {
     this.halfTrack.style.width = `${width}px`;
   }
 
-  setPricePerDay(number) {
-    const price = parseFloat(number);
-    this.pricePerDay = price;
-  }
-
   _showPrice(days) {
-    const d = parseInt(days, 10);
+    let d = parseInt(days, 10);
+    let p = 0;
+    if (this.data) {
+      p = this.data[d]['price'] || 0;
+    }
+    if (p === 0) { d = 0 }; // если цена не получена, то показывает ноли
+    
 
-    const totalPrice = d * this.pricePerDay;
-
-    this.views.price.innerHTML = `${totalPrice} / `;
+    this.views.price.innerHTML = `${p} / `;
 
     if (d === 1) {
       this.views.days.innerHTML = ` на ${d} день `;
     } else {
       this.views.days.innerHTML = ` на ${d} дней `;
     }
-    const str = `#${totalPrice}рублей / на ${d} дней`; // клиент захотел чтобы цена записывалась в аттрибут href (думаю это придется переделывать)
-    this.setHref(document.getElementById('calculatorAnchor'), str);
+
+    // поставить ссылку на кнопку в зависимости от выбранной цены
+    const anchor = document.getElementById('calculatorAnchor');
+    if (p === 0 || d === 0) {
+      this.setHref(anchor, 'javascript:void(0)');
+    } else {
+      const str = this.data[d]['link'];
+      this.setHref(anchor, str);
+    }
   }
 
   setHref(elem, str) {

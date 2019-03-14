@@ -7,21 +7,16 @@ function main() {
   card2init();
   initCloseModal();
   const rangeSlider = new RangeSlider();
-  rangeSlider.init({
-    sliderContainer: document.getElementById('rangeSliderContainerOne'),
-  });
 
-  const test = () => {
-    require.ensure(['./data/data.js'], (require) => {
-      const d = require('./data/data.js');
-
-      console.log(d.default);
+  const getData = () => {
+  require.ensure(['./data/data.js'], function(require) { // data.js выделен в отдельный файл, чтобы клиент(заказчик) мог менять в нём данные
+    rangeSlider.init({
+        sliderContainer: document.getElementById('rangeSliderContainerOne'),
+        data: require('./data/data.js'),
+      });
     }, 'data');
   }
-
-  setTimeout(() => {
-    test();
-  }, 5000);
+  getData();
 }
 
 document.addEventListener('DOMContentLoaded', main);
